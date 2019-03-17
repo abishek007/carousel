@@ -34,9 +34,9 @@ class App extends Component {
           transition: `transform ${index ? 500 : 0}ms`,
         }}
       >
-        {carousels.map(index => 
-          <div className="slider-container">
-            <img src={index} alt="carousel_Image" className="responsive" />
+        {carousels.map(url => 
+          <div className="slider-container" key={url}>
+            <img src={url} alt="carousel_Image" className="responsive" />
           </div>)
         }
       </div>
