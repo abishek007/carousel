@@ -16,7 +16,6 @@ class App extends Component {
   }
 
   slider = () => {
-    console.log("hello")
     const { index } = this.state
     if (index/100 < carousels.length-1) {
       this.setState({index: index + 100})
